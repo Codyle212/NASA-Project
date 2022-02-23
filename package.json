@@ -1,0 +1,18 @@
+{
+  "name": "NASA-Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install":"npm install --prefix server && npm install --prefix client",
+    "client":"npm start --prefix client",
+    "server":"npm run watch --prefix server",
+    "watch": "npm run server & npm run client",
+    "depoly":"npm run build --prefix client&& npm start --prefix server",
+    "depoly-cluster":"npm run build --prefix client&& npm run cluster --prefix server",
+    "test":"npm test --prefix server && npm test --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
